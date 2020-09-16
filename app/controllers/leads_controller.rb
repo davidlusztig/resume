@@ -10,6 +10,7 @@ class LeadsController < ApplicationController
   # GET /leads/1
   # GET /leads/1.json
   def show
+
   end
 
   # GET /leads/new
@@ -27,6 +28,7 @@ class LeadsController < ApplicationController
   def create
     @lead = Lead.new(lead_params)
     @lead.user = current_user
+    authorize @lead
 
     respond_to do |format|
       if @lead.save
@@ -67,6 +69,7 @@ class LeadsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_lead
       @lead = Lead.find(params[:id])
+      authorize @lead
     end
 
     # Only allow a list of trusted parameters through.
