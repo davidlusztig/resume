@@ -25,7 +25,8 @@ class LeadsController < ApplicationController
   # POST /leads.json
   def create
     @lead = Lead.new(lead_params)
-
+    @lead.user = current_user
+    
     respond_to do |format|
       if @lead.save
         format.html { redirect_to @lead, notice: 'Lead was successfully created.' }
@@ -69,6 +70,6 @@ class LeadsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def lead_params
-      params.require(:lead).permit(:name, :user_id)
+      params.require(:lead).permit(:name)
     end
 end
