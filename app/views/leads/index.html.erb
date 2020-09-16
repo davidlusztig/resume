@@ -29,5 +29,6 @@
 </table>
 
 <br>
-
-<%= link_to 'New Lead', new_lead_path %>
+<% if policy(Lead).new? %>
+<%= link_to 'Create A New Lead', new_lead_path %>
+<% end %>

@@ -5,7 +5,7 @@ class LeadsController < ApplicationController
   # GET /leads.json
   def index
     @leads = Lead.all
-    @lead = policy_scope(Lead)
+    @lead = policy_scope(Lead).order(created_at: :desc)
   end
 
   # GET /leads/1
