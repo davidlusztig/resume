@@ -5,6 +5,7 @@ class LeadsController < ApplicationController
   # GET /leads.json
   def index
     @leads = Lead.all
+    @lead = policy_scope(Lead)
   end
 
   # GET /leads/1

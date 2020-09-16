@@ -17,9 +17,13 @@
         <td><%= lead.name %></td>
         <td><%= lead.user_id %></td>
         <td><%= link_to 'Show', lead %></td>
-        <td><%= link_to 'Edit', edit_lead_path(lead) %></td>
-        <td><%= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <% if policy(lead).edit? %>
+          <td><%= link_to 'Edit', edit_lead_path(lead) %></td>
+        <% end %>
+        <% if policy(lead).destroy? %>
+          <td><%= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+    </tr>
     <% end %>
   </tbody>
 </table>
