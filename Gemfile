@@ -25,6 +25,7 @@ gem 'rails_admin', '~> 2.0'
 gem 'blazer'
 gem 'autoprefixer-rails'
 gem 'simple_form'
+gem 'font-awesome-sass'
 
 
 # Use Active Storage variant
@@ -36,7 +37,6 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'pundit'
 gem 'autoprefixer-rails'
-gem 'font-awesome-sass'
 gem 'simple_form'
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
