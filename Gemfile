@@ -23,6 +23,8 @@ gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'rails_admin', '~> 2.0'
 gem 'blazer'
+gem 'autoprefixer-rails'
+gem 'simple_form'
 
 
 # Use Active Storage variant
