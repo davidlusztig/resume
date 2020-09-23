@@ -1,0 +1,29 @@
+.default-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  .show-container {
+    width: 100%;
+    margin: 20px auto;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #F1EBE4;
+    position: relative;
+  }
+  .login-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.19);
+  }
+  
+  
