@@ -6,9 +6,9 @@
 <table class="table-container">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Name of your lead</th>
       <br>
-      <th>User</th>
+      <th>User ID</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -34,4 +34,12 @@
 <% if policy(Lead).new? %>
 <%= link_to 'Create A New Lead', new_lead_path, class: "bttn" %>
 <% end %>
+<br>
+<div>
+<br>
+<span class="badge badge-success">NOTE THAT ONLY IF YOU ARE LOGGED IN AS "ADMIN" WILL YOU BE ABLE TO EDIT AND DESTROY DATA</span>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
 </div>
