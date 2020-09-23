@@ -21,72 +21,10 @@
     margin: 0;
     text-align: center;
   }
+
   
-  .bttn-dark {
-    background: #50514F;
-    color: #EAE1D7;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    // margin: 10px;
-    transition: 0.1s;
-    position: relative;
-    overflow: initial;
-    font-size: 0.75rem;
-    letter-spacing: 0.16em;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .bttn1::before {
-    content: "";
-    position: absolute;
-    right: -5%;
-    bottom: -10%;
-    border: 1px solid black;
-    width: 110%;
-    height: 120%;
-    z-index: 10;
-    transition: background-color 200ms ease 0s, opacity 0.01s ease 400ms, clip-path 400ms ease;
-    clip-path: polygon(20% 0%, 100% 0%, 100% 53%, 80% 100%, 0 100%, 0 47%);
-  }
-  
-  .bttn2::before {
-    content: "";
-    position: absolute;
-    right: -5%;
-    bottom: -10%;
-    border: 1px solid black;
-    width: 110%;
-    height: 120%;
-    z-index: 10;
-    transition: background-color 200ms ease 0s, opacity 0.01s ease 400ms, clip-path 400ms ease;
-    clip-path: polygon(20% 0%, 100% 0%, 100% 53%, 80% 100%, 0 100%, 0 47%);
-  }
-  
-  .bttn1 {
-    color: #50514F;
-  }
-  
-  .bttn2 {
-    color: #EAE1D7;
-  }
-  
-  .bttn1:hover {
-    color: #50514F;
-    text-decoration: none;
+  .bttn-wide:hover {
+    color: white;
     border-radius: 0;
   }
   
-  .bttn1:hover:before {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0 100%, 0 100%);
-  }
-  .bttn2:hover {
-    color: #EAE1D7;
-    text-decoration: none;
-    border-radius: 0;
-  }
-  
-  .bttn2:hover:before {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0 100%, 0 100%);
-  }
