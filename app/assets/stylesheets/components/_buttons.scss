@@ -11,14 +11,14 @@
     font-size: 0.75rem;
     letter-spacing: 0.16em;
     font-weight: bold;
-    color: white;
+    color: whitesmoke;
   }
   
   
   .bttn-wide {
     display: block;
     width: 100%;
-    margin: 0;
+    margin: 1;
     text-align: center;
   }
 
@@ -44,8 +44,8 @@
   
   .btn-flat {
     color: white;
-    padding: 8px 24px;
-    border-radius: 4px;
+    padding: 8px 8px;
+    border-radius: 1px;
     background: #1EDD88;
     transition: background 0.3s ease;
   }
