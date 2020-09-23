@@ -1,4 +1,4 @@
-<div class="container">
+<div class="show-container">
 <p id="notice"><%= notice %></p>
 
 <h1>Leads</h1>
@@ -7,6 +7,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <br>
       <th>User</th>
       <th colspan="3"></th>
     </tr>
@@ -17,12 +18,12 @@
       <tr>
         <td><%= lead.name %></td>
         <td><%= lead.user_id %></td>
-        <td><%= link_to 'Show', lead %></td>
+        <td><%= link_to 'Show', lead , class: "bttn" %></td>
         <% if policy(lead).edit? %>
-          <td><%= link_to 'Edit', edit_lead_path(lead) %></td>
+          <td><%= link_to 'Edit', edit_lead_path(lead), class: "bttn"  %></td>
         <% end %>
         <% if policy(lead).destroy? %>
-          <td><%= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } , class: "bttn" %></td>
         <% end %>
     </tr>
     <% end %>
@@ -31,6 +32,6 @@
 
 <br>
 <% if policy(Lead).new? %>
-<%= link_to 'Create A New Lead', new_lead_path %>
+<%= link_to 'Create A New Lead', new_lead_path, class: "bttn" %>
 <% end %>
 </div>
