@@ -1,0 +1,5 @@
+meta_product_name: "David Lusztig CV Demo"
+meta_title: "Fullstack developer and Senior Online Marketer"
+meta_description: "David Lusztig is a fullstack developer and senior online marketer"
+meta_image: "david.jpg" # should exist in `app/assets/images/`
+twitter_account: "@muffinsisr"   # required for Twitter Cards
