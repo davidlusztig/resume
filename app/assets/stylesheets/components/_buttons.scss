@@ -13,6 +13,11 @@
     color: whitesmoke;
   }
 
+  .bttn:hover {
+    color: white;
+    border-radius: 0;
+  }
+
   .bttn-linkedin{
     background: #0072b1;
     padding: 10px 20px;
@@ -26,6 +31,12 @@
     letter-spacing: 0.16em;
     font-weight: bold;
     color: whitesmoke;
+  }
+
+  .bttn-linkedin:hover {
+    color: white;
+    border-radius: 0;
+
   }
 
   
