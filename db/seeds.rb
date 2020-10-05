@@ -25,12 +25,47 @@ admin = User.new(
     admin: true)
 admin.save!
 
-    5.times do
-      Lead.create(
-          name: Faker::Company.name,
+puts 'admin created'
+puts "--------------------------"
+
+admin = User.new(
+    email: "guest@demo.com",
+    password: "password",
+    admin: false)
+admin.save!
+
+puts "guest created!"
+puts "--------------------------"
+
+puts "--------------------------"
+puts "creating fake users"
+
+(1..10).each do |id|
+    User.create!(
+# each user is assigned an id from 1-20
+        id: id, 
+        email: Faker::Internet.email,
+        password: "password", 
+        password_confirmation: "password",
+# a user can have only one of these roles
+        admin: false 
+    )
+end
+
+puts "--------------------------"
+puts "creating fake leads"
+
+(1..10).each do |id|
+        Lead.create!(
+            id: id,
+            # we have userIds between 120 and 220. Assign a ticket to a user 
+            # randomly
+            user_id: rand(1..10), 
+            name: Faker::Company.name
         )
-    end
-puts "5 leads created"
+          
+end
+
 
 puts "finished seeding"
 puts "--------------------------"
