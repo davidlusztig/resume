@@ -63,7 +63,6 @@ puts "creating fake leads"
             user_id: rand(1..10), 
             name: Faker::Company.name
         )
-          
 end
 
 

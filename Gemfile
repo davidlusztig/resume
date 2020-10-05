@@ -39,7 +39,9 @@ gem 'devise'
 gem 'pundit'
 gem 'autoprefixer-rails'
 gem 'simple_form'
-group :development, :test do  gem 'pry-byebug'
+
+group :development, :test do
+  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
 
