@@ -20,6 +20,7 @@ gem 'turbolinks', '~> 5'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 gem 'faker'
+gem 'omniauth-facebook'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'rails_admin', '~> 2.0'
